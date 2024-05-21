@@ -1,0 +1,157 @@
+:root {
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.html, body {
+    height: 100%;
+    background-color: hsl(275, 100%, 97%);
+}
+
+@font-face {
+    font-family: "WSans-Bold";
+    src: url(assets/fonts/static/WorkSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "WSans-Regular";
+    src: url(assets/fonts/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "WSans-SemiBold";
+    src: url(assets/fonts/static/WorkSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "WSans-Variable";
+    src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+    bottom: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-img {
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding: 12em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-head-and-text {
+    width: 650px;
+    border: 1px black;
+    border-radius: 1em;
+    background-color: white;
+    padding: 2em;
+    font-family: "WSans-Regular";
+    color: hsl(292, 42%, 14%);
+}
+
+.content-head-and-text p {
+    font-family: "WSans-Semibold";
+}
+
+.content-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.content-head img{
+    margin-right: 1em;
+}
+
+.content-head h1{
+    font-size: 3em;
+    font-family: "WSans-Bold";
+}
+
+.content-text {
+    align-items: center;
+    grid-gap: 1em;
+}
+
+.faq-item {
+    margin: 1em 0;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.icon-button img{
+    display: block;
+}
+
+.link {
+    text-decoration: none;
+    color: hsl(292, 42%, 14%);
+}
+
+.link:hover {
+    color: rgb(129, 0, 221);
+}
+
+.answer {
+    font-family: "WSans-Bold";
+    font-weight: 800;
+    color: hsl(292, 42%, 14%);
+    margin-top: 0.75em;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px){
+    .container{
+        max-width: 360px;
+    }    
+    .main {
+        max-width: 320px;
+    }
+}
